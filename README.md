@@ -1,4 +1,4 @@
-# Components_Loss
+# Components Loss
 
 These scripts are referring to the paper "Components Loss for Neural Networks in Mask-Based Speech Enhancement". In this repository, we provide the source code for training the mask-based speech enhancement convolutional neural networks (CNNs) using our proposed components loss (CL), which includes both 2 components loss (2CL) and 3 components loss (3CL). The corresponding test code is also offered.
 
