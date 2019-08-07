@@ -38,7 +38,7 @@ Note that in this project the clean speech signals are taken from the [Grid corp
 4. ```validation_pure_noise.mat``` (amplitude spectra of noise component)
 5. ```training_clean_speech.mat``` (amplitude spectra of speech component)
 6. ```validation_clean_speech.mat``` (amplitude spectra of speech component)
-- ALL matrices have the dimensions of L*K (e.g. 1,000,000 *132). K represents the number of input and output frequency bins and is set to 132, and L represents the number of frames.
+- All matrices have the dimensions of L*K (e.g. 1,000,000 *132). K represents the number of input and output frequency bins and is set to 132, and L represents the number of frames.
 - All `.mat` files must be stored in `version 7.3`, using Matlab command `save('filename.mat','variable','-v7.3')` to enable very large data matrix saving.
 - Small examples are placed under the directory: `./ training_data/`. To start your own training, replace these `.mat` files by your own data. More details are in the Python scripts. You can try the training script by using these small examples.
 
