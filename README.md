@@ -63,8 +63,8 @@ python Mask-based_CNN_3CL_training.py
 3. ```test_clean_speech.mat``` (amplitude spectra of speech component, used to generate the _filtered_ speech component, which can be used for white-box based performance measures)
 4. ```test_noisy_speech_unmorm.mat``` (unnormalized noisy speech amplitude spectra, used for predicting enhanced speech)
 - All matrix have the dimensions of L*K (e.g. 1,000 *132) as explained before.
-- All `.mat` files are stored using Matlab command `save('filename.mat','variable')`, which allows to save maximum 2GB `.mat` file. If you have a very large test data, you also need to store in `-v7.3`, and to modify the data loading part in the test script.
-- Small examples are placed under the directory: `./ test_data /`. To start your test, replace these `.mat` files by your own data. More details are in the Python scripts. You can directly run the test script by using these small examples to check the data dimensions.
+- All `.mat` files are stored using Matlab command `save('filename.mat','variable')`, which allows to save maximum 2GB `.mat` file. If you have a very large test data, you also need to store `.mat` files in `-v7.3`, and to modify the corresponding data loading part in the test script.
+- Small examples are placed under the directory: `./ test_data /`. To start your test, replace these `.mat` files by your own data. More details are in the Python scripts. You can try the test script by using these small examples.
 - The output of the scripts include:
 1. ```test_n_tilde.mat.mat``` (_filtered_ noise amplitude spectra)
 2. ```test_s_tilde.mat``` (_filtered_ speech amplitude spectra)
