@@ -38,7 +38,7 @@ Note that in this project the clean speech signals are taken from the [Grid corp
 4. ```validation_pure_noise.mat``` (amplitude spectra of noise component)
 5. ```training_clean_speech.mat``` (amplitude spectra of speech component)
 6. ```validation_clean_speech.mat``` (amplitude spectra of speech component)
-- All matrix have the dimensions of L*K (e.g. 1,000,000 *132). K represents the number of input and output frequency bins and is set to 132, and L represents the number of frames.
+- All matrices have the dimensions of L*K (e.g. 1,000,000 *132). K represents the number of input and output frequency bins and is set to 132, and L represents the number of frames.
 - All `.mat` files must be stored in `version 7.3`, using Matlab command `save('filename.mat','variable','-v7.3')` to enable very large data matrix saving.
 - Small examples are placed under the directory: `./ training_data/`. To start your own training, replace these `.mat` files by your own data. More details are in the Python scripts. You can try the training script by using these small examples.
 
@@ -62,7 +62,7 @@ python Mask-based_CNN_3CL_training.py
 2. ```test_pure_noise.mat``` (amplitude spectra of noise component, used to generate the _filtered_ noise component, which can be used for white-box based performance measures)
 3. ```test_clean_speech.mat``` (amplitude spectra of speech component, used to generate the _filtered_ speech component, which can be used for white-box based performance measures)
 4. ```test_noisy_speech_unmorm.mat``` (unnormalized noisy speech amplitude spectra, used for predicting enhanced speech)
-- All matrix have the dimensions of L*K (e.g. 1,000 *132) as explained before.
+- All matrices have the dimensions of L*K (e.g. 1,000 *132) as explained before.
 - All `.mat` files are stored using Matlab command `save('filename.mat','variable')`, which allows to save maximum 2 GB `.mat` file. If you have a very large test data, you also need to store `.mat` files in `-v7.3`, and to modify the corresponding data loading part in the test script.
 - Small examples are placed under the directory: `./ test_data /`. To start your test, replace these `.mat` files by your own data. More details are in the Python scripts. You can try the test script by using these small examples.
 - The output of the scripts include:
