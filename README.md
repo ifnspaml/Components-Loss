@@ -85,6 +85,20 @@ python Mask-based_CNN_3CL_test.py
 ### Time-domain signal reconstruction
 
  - The stored test data phase information is used to recover the time domain signal by IFFT with overlap add (OLA).
+ 
+ ## Citation
+
+If you use the scripts in your research, please cite
+
+```
+@article{xu2019Comploss,
+  author =  {Z. Xu, S. Elshamy, Z. Zhao and T. Fingscheidt},
+  title =   {{Components Loss for Neural Networks in Mask-Based Speech Enhancement}},
+  journal = {arXiv preprint arXiv: 1908.05087},
+  year =    {2019},
+  month =   {Aug.}
+}
+```
 
 ## Acknowledgements
 - The author would like to thank Ziyue Zhao and Samy Elshamy for the advice concerning the construction of these source code in GitHub.
