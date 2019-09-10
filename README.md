@@ -86,6 +86,10 @@ python Mask-based_CNN_3CL_test.py
 
  - The stored test data phase information is used to recover the time domain signal by IFFT with overlap add (OLA).
  
+ ## Audio demos
+ - We provide audio demos using files from the test dataset in the presence of pedestrian (PED) noise at 10dB signal-to-noise ratio (SNR) level. The audios include speech from both female and male test speakers. 
+ - We put the audio demos under the directory: `./Audio_demo/`.
+ 
  ## Citation
 
 If you use the losses and/or scripts in your research, please cite
