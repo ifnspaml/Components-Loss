@@ -88,7 +88,7 @@ python Mask-based_CNN_3CL_test.py
  
  ## Citation
 
-If you use the scripts in your research, please cite
+If you use the losses and/or scripts in your research, please cite
 
 ```
 @article{xu2019Comploss,
