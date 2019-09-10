@@ -89,6 +89,7 @@ python Mask-based_CNN_3CL_test.py
  ## Audio Demos
  - We provide audio demos using files from the test dataset in the presence of pedestrian (PED) noise at 10dB signal-to-noise ratio (SNR) level. The audios include speech from both female and male test speakers. 
  - We put the audio demos under the directory: `./Audio_demo/`.
+ - We also offer the corresponding audio demos in the format of `.wav` files, and put them under the directory: `./Audio_demo_wav_file/`.
  
  ## Citation
 
