@@ -215,7 +215,7 @@ c1_2 = LeakyReLU(0.2)(c1_2)
 m2 = Add()([c1, c1_2])
 
 # Estimated mask from noisy input
-mask = Conv1D(1, N_cnn, padding='same', activation='linear')(m2)
+mask = Conv1D(1, N_cnn, padding='same', activation='sigmoid')(m2)
 
 # generate the filtered speech and noise component
 n_tilde= Multiply()([mask,input_noise_component])
